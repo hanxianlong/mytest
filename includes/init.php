@@ -114,7 +114,6 @@ if ($_CFG['shop_closed'] == 1)
 {
     /* 商店关闭了，输出关闭的消息 */
     header('Content-type: text/html; charset='.EC_CHARSET);
-
     die('<div style="margin: 150px; text-align: center; font-size: 14px"><p>' . $_LANG['shop_closed'] . '</p><p>' . $_CFG['close_comment'] . '</p></div>');
 }
 
