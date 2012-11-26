@@ -12,9 +12,9 @@ $db_user   = "root";
 $db_pass   = "han1987118";
 
 // table prefix
-$prefix    = "myecs_";
+$prefix    = "myecs";
 
-$timezone    = "PRC";
+$timezone    = "UTC";
 
 $cookie_path    = "/";
 
@@ -23,8 +23,13 @@ $cookie_domain    = "";
 $session = "1440";
 
 define('EC_CHARSET','utf-8');
+
 define('ADMIN_PATH','admin');
+
 define('AUTH_KEY', 'this is a key');
+
 define('OLD_AUTH_KEY', '');
+
 define('API_TIME', '');
+
 ?>
