@@ -18,7 +18,7 @@ error_reporting(7);
 
 if (!defined('IN_ECS'))
 {
-    die('Hacking attempt');
+    die('Sorry, please dont hack me..');
 }
 
 /* 取得当前client所在的根目录 */

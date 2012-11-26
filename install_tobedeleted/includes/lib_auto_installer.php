@@ -9,13 +9,13 @@
  * 这不是一个自由软件！您只能在不用于商业目的的前提下对程序代码进行修改和
  * 使用；不允许对程序代码以任何形式任何目的的再发布。
  * ============================================================================
- * $Author: liubo $
- * $Id: lib_installer.php 17217 2011-01-19 06:29:08Z liubo $
+ * $Author: liuhui $
+ * $Id: lib_installer.php 16368 2009-06-26 03:39:19Z liuhui $
  */
 
 if (!defined('IN_ECS'))
 {
-    die('Hacking attempt');
+    die('Sorry, please dont hack me..');
 }
 
 /**
@@ -331,11 +331,7 @@ function create_config_file($db_host, $db_port, $db_user, $db_pass, $db_name, $p
     $content .= "\$session = \"1440\";\n\n";
     $content .= "define('EC_CHARSET','".EC_CHARSET."');\n\n";
     $content .= "define('ADMIN_PATH','admin');\n\n";
-    $content .= "define('AUTH_KEY', 'this is a key');\n\n";
-    $content .= "define('OLD_AUTH_KEY', '');\n\n";
-    $content .= "define('API_TIME', '');\n\n";
     $content .= '?>';
-
 
     $fp = @fopen(ROOT_PATH . 'data/config.php', 'wb+');
     if (!$fp)
@@ -407,9 +403,9 @@ function create_admin_passport($admin_name, $admin_password, $admin_password2, $
 {
     if(trim($_REQUEST['lang'])!='zh_cn')
     {
-        global $err;
-        $system_lang = isset($_REQUEST['lang']) ? $_REQUEST['lang'] : 'zh_cn';
-        include(ROOT_PATH . 'install/languages/' . $system_lang . '.php');
+        global $err,$_LANG;
+        $system_lang = isset($_POST['system_lang'])     ? $_POST['system_lang'] : 'zh_cn';
+        include_once(ROOT_PATH . 'install/languages/' . $system_lang . '.php');
     }
     else
     {
@@ -434,11 +430,7 @@ function create_admin_passport($admin_name, $admin_password, $admin_password2, $
         return false;
     }
 
-    if ($admin_password !== $admin_password2)
-    {
-        $err->add($_LANG['passwords_not_eq']);
-        return false;
-    }
+
 
     include(ROOT_PATH . 'data/config.php');
     include_once(ROOT_PATH . 'includes/cls_mysql.php');
@@ -450,7 +442,7 @@ function create_admin_passport($admin_name, $admin_password, $admin_password2, $
     $sql = "INSERT INTO $prefix"."admin_user ".
                 "(user_name, email, password, add_time, action_list, nav_list)".
             "VALUES ".
-                "('$admin_name', '$admin_email', '".md5($admin_password). "', " .gmtime(). ", 'all', '$nav_list')";
+                "('$admin_name', '$admin_email', '".$admin_password. "', " .gmtime(). ", 'all', '$nav_list')";
     if (!$db->query($sql,  'SILENT'))
     {
         $err->add($_LANG['create_passport_failed']);
@@ -536,7 +528,6 @@ function copy_files($source, $target)
         }
         @chmod($target, 0777);
     }
-
     $dir = opendir($source);
     while (($file = @readdir($dir)) !== false)
     {
@@ -695,11 +686,11 @@ function deal_aftermath()
 
     $db = new cls_mysql($db_host, $db_user, $db_pass, $db_name);
 
-    /* 初始化友情链接 */
+    /* 初始化友情链接
     $sql = "INSERT INTO $prefix"."friend_link ".
                 "(link_name, link_url, link_logo, show_order)".
             "VALUES ".
-                "('".$_LANG['default_friend_link']."', 'http://www.ecshop.com/', 'http://www.ecshop.com/images/logo/ecshop_logo.gif','50')";
+                "('".$_LANG['default_friend_link']."', 'http://www.ecshop.com/', 'http://www.ecshop.com/images/logo/ecshop_logo.gif','0')";
     if (!$db->query($sql, 'SILENT'))
     {
         $err->add($db->errno() .' '. $db->error());
@@ -708,19 +699,12 @@ function deal_aftermath()
     $sql = "INSERT INTO $prefix"."friend_link ".
                 "(link_name, link_url, show_order)".
             "VALUES ".
-                "('".$_LANG['maifou_friend_link']."', 'http://www.maifou.net/','51')";
+                "('".$_LANG['maifou_friend_link']."', 'http://www.maifou.net/','1')";
     if (!$db->query($sql, 'SILENT'))
     {
         $err->add($db->errno() .' '. $db->error());
-    }
-    $sql = "INSERT INTO $prefix"."friend_link ".
-                "(link_name, link_url, show_order)".
-            "VALUES ".
-                "('".$_LANG['wdwd_friend_link']."', 'http://www.wdwd.com/','52')";
-    if (!$db->query($sql, 'SILENT'))
-    {
-        $err->add($db->errno() .' '. $db->error());
-    }
+    }*/
+
     /* 更新 ECSHOP 安装日期 */
     $sql = "UPDATE $prefix"."shop_config SET value='" .time(). "' WHERE code='install_date'";
     if (!$db->query($sql, 'SILENT'))
@@ -752,7 +736,7 @@ function deal_aftermath()
         $err->add($_LANG['open_installlock_failed']);
         return false;
     }
-    if (!@fwrite($fp, "ECSHOP INSTALLED"))
+    if (!@fwrite($fp, "TRADE SHOP INSTALLED"))
     {
         $err->add($_LANG['write_installlock_failed']);
         return false;

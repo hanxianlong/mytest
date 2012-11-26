@@ -15,7 +15,7 @@
 
 if (!defined('IN_ECS'))
 {
-    die('Hacking attempt');
+    die('Sorry, please dont hack me..');
 }
 
 $modules['02_cat_and_goods']['01_goods_list']       = 'goods.php?act=list';         // 商品列表

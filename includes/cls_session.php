@@ -2,7 +2,7 @@
 
 if (!defined('IN_ECS'))
 {
-    die('Hacking attempt');
+    die('Sorry, please dont hack me..');
 }
 
 class cls_session

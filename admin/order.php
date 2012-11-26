@@ -2826,7 +2826,7 @@ elseif ($_REQUEST['act'] == 'operate')
             $operable_list = operable_list($order);
             if (!isset($operable_list['remove']))
             {
-                die('Hacking attempt');
+                die('Sorry, please dont hack me..');
             }
 
             /* 删除订单 */
@@ -3384,7 +3384,7 @@ elseif ($_REQUEST['act'] == 'operate_post')
     $operable_list = operable_list($order);
     if (!isset($operable_list[$operation]))
     {
-        die('Hacking attempt');
+        die('Sorry, please dont hack me..');
     }
 
     /* 取得备注信息 */
@@ -4234,7 +4234,7 @@ elseif ($_REQUEST['act'] == 'remove_order')
     $operable_list = operable_list($order);
     if (!isset($operable_list['remove']))
     {
-        make_json_error('Hacking attempt');
+        make_json_error('Sorry, please dont hack me..');
         exit;
     }
 

@@ -15,7 +15,7 @@
 
 if (!defined('IN_ECS'))
 {
-    die('Hacking attempt');
+    die('Sorry, please dont hack me..');
 }
 define('SOURCE_TOKEN', '814d4852d74f5914b41695ee7fa8508c');
 define('SOURCE_ID', '863180');

@@ -15,7 +15,7 @@
 
 if (!defined('IN_ECS'))
 {
-    die('Hacking attempt');
+    die('Sorry, please dont hack me..');
 }
 
 /* 图片处理相关常数 */

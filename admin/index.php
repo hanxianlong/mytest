@@ -405,7 +405,7 @@ elseif ($_REQUEST['act'] == 'main')
     $sys_info['os']            = PHP_OS;
     $sys_info['ip']            = $_SERVER['SERVER_ADDR'];
     $sys_info['web_server']    = $_SERVER['SERVER_SOFTWARE'];
-    $sys_info['php_ver']       = PHP_VERSION;
+    $sys_info['php_ver']       = PHP_VERSION; 
     $sys_info['mysql_ver']     = $mysql_ver;
     $sys_info['zlib']          = function_exists('gzclose') ? $_LANG['yes']:$_LANG['no'];
     $sys_info['safe_mode']     = (boolean) ini_get('safe_mode') ?  $_LANG['yes']:$_LANG['no'];
@@ -462,9 +462,7 @@ elseif ($_REQUEST['act'] == 'main')
 
     /* 退款申请 */
     $smarty->assign('new_repay', $db->getOne('SELECT COUNT(*) FROM ' . $ecs->table('user_account') . ' WHERE process_type = ' . SURPLUS_RETURN . ' AND is_paid = 0 '));
-
-
-
+ 
     assign_query_info();
     $smarty->assign('ecs_version',  VERSION);
     $smarty->assign('ecs_release',  RELEASE);
@@ -511,7 +509,7 @@ elseif ($_REQUEST['act'] == 'main_api')
         $t = new transport;
         $api_comment = $t->request('http://api.ecshop.com/checkver.php', $apiget);
         $api_str = $api_comment["body"];
-        echo $api_str;
+        echo  $api_str;
         
         $f=ROOT_PATH . 'data/config.php'; 
         file_put_contents($f,str_replace("'API_TIME', '".API_TIME."'","'API_TIME', '".date('Y-m-d H:i:s',time())."'",file_get_contents($f)));

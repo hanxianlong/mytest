@@ -42,14 +42,12 @@ else
 {
     @ini_set('include_path', '.:' . ROOT_PATH);
 }
-echo ini_get('include_path');
-
 require(ROOT_PATH . 'data/config.php');
 
 if (defined('DEBUG_MODE') == false)
 {
     define('DEBUG_MODE', 0);
-}
+} 
 
 if (PHP_VERSION >= '5.1' && !empty($timezone))
 {

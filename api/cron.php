@@ -190,14 +190,14 @@ function check_method()
     {
         if (!$if_cron)
         {
-            die('Hacking attempt');
+            die('Sorry, please dont hack me..');
         }
     }
     else
     {
         if ($if_cron)
         {
-            die('Hacking attempt');
+            die('Sorry, please dont hack me..');
         }
         elseif (!isset($_GET['t']) || $GLOBALS['timestamp'] - intval($_GET['t']) > 60 || empty($_SERVER['HTTP_REFERER']))
         {
