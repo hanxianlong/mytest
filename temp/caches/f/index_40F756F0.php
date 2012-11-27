@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <?php exit;?>a:3:{s:8:"template";a:21:{i:0;s:44:"/var/www/ecshop/themes/warbyparker/index.dwt";i:1;s:58:"/var/www/ecshop/themes/warbyparker/library/page_header.lbi";i:2;s:51:"/var/www/ecshop/themes/warbyparker/library/cart.lbi";i:3;s:60:"/var/www/ecshop/themes/warbyparker/library/category_tree.lbi";i:4;s:52:"/var/www/ecshop/themes/warbyparker/library/top10.lbi";i:5;s:61:"/var/www/ecshop/themes/warbyparker/library/promotion_info.lbi";i:6;s:58:"/var/www/ecshop/themes/warbyparker/library/order_query.lbi";i:7;s:60:"/var/www/ecshop/themes/warbyparker/library/invoice_query.lbi";i:8;s:56:"/var/www/ecshop/themes/warbyparker/library/vote_list.lbi";i:9;s:57:"/var/www/ecshop/themes/warbyparker/library/email_list.lbi";i:10;s:55:"/var/www/ecshop/themes/warbyparker/library/index_ad.lbi";i:11;s:59:"/var/www/ecshop/themes/warbyparker/library/new_articles.lbi";i:12;s:66:"/var/www/ecshop/themes/warbyparker/library/recommend_promotion.lbi";i:13;s:53:"/var/www/ecshop/themes/warbyparker/library/brands.lbi";i:14;s:61:"/var/www/ecshop/themes/warbyparker/library/recommend_best.lbi";i:15;s:60:"/var/www/ecshop/themes/warbyparker/library/recommend_new.lbi";i:16;s:60:"/var/www/ecshop/themes/warbyparker/library/recommend_hot.lbi";i:17;s:54:"/var/www/ecshop/themes/warbyparker/library/auction.lbi";i:18;s:56:"/var/www/ecshop/themes/warbyparker/library/group_buy.lbi";i:19;s:51:"/var/www/ecshop/themes/warbyparker/library/help.lbi";i:20;s:58:"/var/www/ecshop/themes/warbyparker/library/page_footer.lbi";}s:7:"expires";i:1354032067;s:8:"maketime";i:1354028467;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+=======
+<?php exit;?>a:3:{s:8:"template";a:21:{i:0;s:40:"/var/www/ecshop/themes/default/index.dwt";i:1;s:54:"/var/www/ecshop/themes/default/library/page_header.lbi";i:2;s:47:"/var/www/ecshop/themes/default/library/cart.lbi";i:3;s:56:"/var/www/ecshop/themes/default/library/category_tree.lbi";i:4;s:48:"/var/www/ecshop/themes/default/library/top10.lbi";i:5;s:57:"/var/www/ecshop/themes/default/library/promotion_info.lbi";i:6;s:54:"/var/www/ecshop/themes/default/library/order_query.lbi";i:7;s:56:"/var/www/ecshop/themes/default/library/invoice_query.lbi";i:8;s:52:"/var/www/ecshop/themes/default/library/vote_list.lbi";i:9;s:53:"/var/www/ecshop/themes/default/library/email_list.lbi";i:10;s:51:"/var/www/ecshop/themes/default/library/index_ad.lbi";i:11;s:55:"/var/www/ecshop/themes/default/library/new_articles.lbi";i:12;s:62:"/var/www/ecshop/themes/default/library/recommend_promotion.lbi";i:13;s:49:"/var/www/ecshop/themes/default/library/brands.lbi";i:14;s:57:"/var/www/ecshop/themes/default/library/recommend_best.lbi";i:15;s:56:"/var/www/ecshop/themes/default/library/recommend_new.lbi";i:16;s:56:"/var/www/ecshop/themes/default/library/recommend_hot.lbi";i:17;s:50:"/var/www/ecshop/themes/default/library/auction.lbi";i:18;s:52:"/var/www/ecshop/themes/default/library/group_buy.lbi";i:19;s:47:"/var/www/ecshop/themes/default/library/help.lbi";i:20;s:54:"/var/www/ecshop/themes/default/library/page_footer.lbi";}s:7:"expires";i:1354024331;s:8:"maketime";i:1354020731;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+>>>>>>> 846cbb0d1d860b1d78f8e1314e852f8ef9802bcc
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -428,7 +432,60 @@ Notice: can't write:/var/www/ecshop/temp/compiled/recommend_best.lbi.php in /var
            <font class="f1">
                      ￥385元                     </font>
         </div>
+<<<<<<< HEAD
     <div class="more"><a href="search.php?intro=best"><img src="themes/warbyparker/images/more.gif" /></a></div>
+=======
+    <div class="goodsItem">
+         <span class="best"></span>
+           <a href="goods.php?id=17"><img src="images/200905/thumb_img/17_thumb_G_1241969394587.jpg" alt="夏新N7" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=17" title="夏新N7">夏新N7</a></p>
+           <font class="f1">
+                     ￥2300元                     </font>
+        </div>
+    <div class="goodsItem">
+         <span class="best"></span>
+           <a href="goods.php?id=19"><img src="images/200905/thumb_img/19_thumb_G_1241970175208.jpg" alt="三星SGH-F258" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=19" title="三星SGH-F258">三星SGH-F...</a></p>
+           <font class="f1">
+                     ￥858元                     </font>
+        </div>
+    <div class="goodsItem">
+         <span class="best"></span>
+           <a href="goods.php?id=20"><img src="images/200905/thumb_img/20_thumb_G_1242106490058.jpg" alt="三星BC01" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=20" title="三星BC01">三星BC01</a></p>
+           <font class="f1">
+                     ￥280元                     </font>
+        </div>
+    <div class="goodsItem">
+         <span class="best"></span>
+           <a href="goods.php?id=22"><img src="images/200905/thumb_img/22_thumb_G_1241971076803.jpg" alt="多普达Touch HD" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=22" title="多普达Touch HD">多普达Touc...</a></p>
+           <font class="f1">
+                     ￥5999元                     </font>
+        </div>
+    <div class="goodsItem">
+         <span class="best"></span>
+           <a href="goods.php?id=23"><img src="images/200905/thumb_img/23_thumb_G_1241971556399.jpg" alt="诺基亚N96" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=23" title="诺基亚N96">诺基亚N96</a></p>
+           <font class="f1">
+                     ￥3700元                     </font>
+        </div>
+    <div class="goodsItem">
+         <span class="best"></span>
+           <a href="goods.php?id=24"><img src="images/200905/thumb_img/24_thumb_G_1241971981429.jpg" alt="P806" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=24" title="P806">P806</a></p>
+           <font class="f1">
+                     ￥2000元                     </font>
+        </div>
+    <div class="goodsItem">
+         <span class="best"></span>
+           <a href="goods.php?id=27"><img src="images/200905/thumb_img/27_thumb_G_1241972894068.jpg" alt="联通100元充值卡" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=27" title="联通100元充值卡">联通100元充...</a></p>
+           <font class="f1">
+                     ￥95元                     </font>
+        </div>
+    <div class="more"><a href="search.php?intro=best"><img src="themes/default/images/more.gif" /></a></div>
+>>>>>>> 846cbb0d1d860b1d78f8e1314e852f8ef9802bcc
     </div>
 </div>
 </div>
@@ -468,7 +525,60 @@ Notice: can't write:/var/www/ecshop/temp/compiled/recommend_new.lbi.php in /var/
            <font class="f1">
                      ￥1388元                     </font>
         </div>
+<<<<<<< HEAD
     <div class="more"><a href="search.php?intro=new"><img src="themes/warbyparker/images/more.gif" /></a></div>
+=======
+    <div class="goodsItem">
+         <span class="news"></span>
+           <a href="goods.php?id=8"><img src="images/200905/thumb_img/8_thumb_G_1241425513488.jpg" alt="飞利浦9@9v" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=8" title="飞利浦9@9v">飞利浦9@9v</a></p>
+           <font class="f1">
+                     ￥385元                     </font>
+        </div>
+    <div class="goodsItem">
+         <span class="news"></span>
+           <a href="goods.php?id=19"><img src="images/200905/thumb_img/19_thumb_G_1241970175208.jpg" alt="三星SGH-F258" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=19" title="三星SGH-F258">三星SGH-F...</a></p>
+           <font class="f1">
+                     ￥858元                     </font>
+        </div>
+    <div class="goodsItem">
+         <span class="news"></span>
+           <a href="goods.php?id=20"><img src="images/200905/thumb_img/20_thumb_G_1242106490058.jpg" alt="三星BC01" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=20" title="三星BC01">三星BC01</a></p>
+           <font class="f1">
+                     ￥280元                     </font>
+        </div>
+    <div class="goodsItem">
+         <span class="news"></span>
+           <a href="goods.php?id=22"><img src="images/200905/thumb_img/22_thumb_G_1241971076803.jpg" alt="多普达Touch HD" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=22" title="多普达Touch HD">多普达Touc...</a></p>
+           <font class="f1">
+                     ￥5999元                     </font>
+        </div>
+    <div class="goodsItem">
+         <span class="news"></span>
+           <a href="goods.php?id=23"><img src="images/200905/thumb_img/23_thumb_G_1241971556399.jpg" alt="诺基亚N96" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=23" title="诺基亚N96">诺基亚N96</a></p>
+           <font class="f1">
+                     ￥3700元                     </font>
+        </div>
+    <div class="goodsItem">
+         <span class="news"></span>
+           <a href="goods.php?id=24"><img src="images/200905/thumb_img/24_thumb_G_1241971981429.jpg" alt="P806" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=24" title="P806">P806</a></p>
+           <font class="f1">
+                     ￥2000元                     </font>
+        </div>
+    <div class="goodsItem">
+         <span class="news"></span>
+           <a href="goods.php?id=12"><img src="images/200905/thumb_img/12_thumb_G_1241965978410.jpg" alt="摩托罗拉A810" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=12" title="摩托罗拉A810">摩托罗拉A81...</a></p>
+           <font class="f1">
+                     ￥983元                     </font>
+        </div>
+    <div class="more"><a href="search.php?intro=new"><img src="themes/default/images/more.gif" /></a></div>
+>>>>>>> 846cbb0d1d860b1d78f8e1314e852f8ef9802bcc
     </div>
 </div>
 </div>
@@ -508,7 +618,60 @@ Notice: can't write:/var/www/ecshop/temp/compiled/recommend_hot.lbi.php in /var/
            <font class="f1">
                      ￥1388元                     </font>
         </div>
+<<<<<<< HEAD
     <div class="more"><a href="search.php?intro=hot"><img src="themes/warbyparker/images/more.gif" /></a></div>
+=======
+    <div class="goodsItem">
+         <span class="hot"></span>
+           <a href="goods.php?id=8"><img src="images/200905/thumb_img/8_thumb_G_1241425513488.jpg" alt="飞利浦9@9v" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=8" title="飞利浦9@9v">飞利浦9@9v</a></p>
+           <font class="f1">
+                     ￥385元                     </font>
+        </div>
+    <div class="goodsItem">
+         <span class="hot"></span>
+           <a href="goods.php?id=13"><img src="images/200905/thumb_img/13_thumb_G_1241968002527.jpg" alt="诺基亚5320 XpressMusic" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=13" title="诺基亚5320 XpressMusic">诺基亚5320...</a></p>
+           <font class="f1">
+                     ￥1311元                     </font>
+        </div>
+    <div class="goodsItem">
+         <span class="hot"></span>
+           <a href="goods.php?id=14"><img src="images/200905/thumb_img/14_thumb_G_1241968492116.jpg" alt="诺基亚5800XM" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=14" title="诺基亚5800XM">诺基亚5800...</a></p>
+           <font class="f1">
+                     ￥2625元                     </font>
+        </div>
+    <div class="goodsItem">
+         <span class="hot"></span>
+           <a href="goods.php?id=17"><img src="images/200905/thumb_img/17_thumb_G_1241969394587.jpg" alt="夏新N7" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=17" title="夏新N7">夏新N7</a></p>
+           <font class="f1">
+                     ￥2300元                     </font>
+        </div>
+    <div class="goodsItem">
+         <span class="hot"></span>
+           <a href="goods.php?id=19"><img src="images/200905/thumb_img/19_thumb_G_1241970175208.jpg" alt="三星SGH-F258" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=19" title="三星SGH-F258">三星SGH-F...</a></p>
+           <font class="f1">
+                     ￥858元                     </font>
+        </div>
+    <div class="goodsItem">
+         <span class="hot"></span>
+           <a href="goods.php?id=20"><img src="images/200905/thumb_img/20_thumb_G_1242106490058.jpg" alt="三星BC01" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=20" title="三星BC01">三星BC01</a></p>
+           <font class="f1">
+                     ￥280元                     </font>
+        </div>
+    <div class="goodsItem">
+         <span class="hot"></span>
+           <a href="goods.php?id=24"><img src="images/200905/thumb_img/24_thumb_G_1241971981429.jpg" alt="P806" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=24" title="P806">P806</a></p>
+           <font class="f1">
+                     ￥2000元                     </font>
+        </div>
+    <div class="more"><a href="search.php?intro=hot"><img src="themes/default/images/more.gif" /></a></div>
+>>>>>>> 846cbb0d1d860b1d78f8e1314e852f8ef9802bcc
     </div>
 </div>
 </div>
