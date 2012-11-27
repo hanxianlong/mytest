@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:21:{i:0;s:66:"D:/website/ECShop_V2.7.3_UTF8_release1106/themes/default/index.dwt";i:1;s:80:"D:/website/ECShop_V2.7.3_UTF8_release1106/themes/default/library/page_header.lbi";i:2;s:73:"D:/website/ECShop_V2.7.3_UTF8_release1106/themes/default/library/cart.lbi";i:3;s:82:"D:/website/ECShop_V2.7.3_UTF8_release1106/themes/default/library/category_tree.lbi";i:4;s:74:"D:/website/ECShop_V2.7.3_UTF8_release1106/themes/default/library/top10.lbi";i:5;s:83:"D:/website/ECShop_V2.7.3_UTF8_release1106/themes/default/library/promotion_info.lbi";i:6;s:80:"D:/website/ECShop_V2.7.3_UTF8_release1106/themes/default/library/order_query.lbi";i:7;s:82:"D:/website/ECShop_V2.7.3_UTF8_release1106/themes/default/library/invoice_query.lbi";i:8;s:78:"D:/website/ECShop_V2.7.3_UTF8_release1106/themes/default/library/vote_list.lbi";i:9;s:79:"D:/website/ECShop_V2.7.3_UTF8_release1106/themes/default/library/email_list.lbi";i:10;s:77:"D:/website/ECShop_V2.7.3_UTF8_release1106/themes/default/library/index_ad.lbi";i:11;s:81:"D:/website/ECShop_V2.7.3_UTF8_release1106/themes/default/library/new_articles.lbi";i:12;s:88:"D:/website/ECShop_V2.7.3_UTF8_release1106/themes/default/library/recommend_promotion.lbi";i:13;s:75:"D:/website/ECShop_V2.7.3_UTF8_release1106/themes/default/library/brands.lbi";i:14;s:83:"D:/website/ECShop_V2.7.3_UTF8_release1106/themes/default/library/recommend_best.lbi";i:15;s:82:"D:/website/ECShop_V2.7.3_UTF8_release1106/themes/default/library/recommend_new.lbi";i:16;s:82:"D:/website/ECShop_V2.7.3_UTF8_release1106/themes/default/library/recommend_hot.lbi";i:17;s:76:"D:/website/ECShop_V2.7.3_UTF8_release1106/themes/default/library/auction.lbi";i:18;s:78:"D:/website/ECShop_V2.7.3_UTF8_release1106/themes/default/library/group_buy.lbi";i:19;s:73:"D:/website/ECShop_V2.7.3_UTF8_release1106/themes/default/library/help.lbi";i:20;s:80:"D:/website/ECShop_V2.7.3_UTF8_release1106/themes/default/library/page_footer.lbi";}s:7:"expires";i:1354012881;s:8:"maketime";i:1354009281;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:21:{i:0;s:40:"/var/www/ecshop/themes/default/index.dwt";i:1;s:54:"/var/www/ecshop/themes/default/library/page_header.lbi";i:2;s:47:"/var/www/ecshop/themes/default/library/cart.lbi";i:3;s:56:"/var/www/ecshop/themes/default/library/category_tree.lbi";i:4;s:48:"/var/www/ecshop/themes/default/library/top10.lbi";i:5;s:57:"/var/www/ecshop/themes/default/library/promotion_info.lbi";i:6;s:54:"/var/www/ecshop/themes/default/library/order_query.lbi";i:7;s:56:"/var/www/ecshop/themes/default/library/invoice_query.lbi";i:8;s:52:"/var/www/ecshop/themes/default/library/vote_list.lbi";i:9;s:53:"/var/www/ecshop/themes/default/library/email_list.lbi";i:10;s:51:"/var/www/ecshop/themes/default/library/index_ad.lbi";i:11;s:55:"/var/www/ecshop/themes/default/library/new_articles.lbi";i:12;s:62:"/var/www/ecshop/themes/default/library/recommend_promotion.lbi";i:13;s:49:"/var/www/ecshop/themes/default/library/brands.lbi";i:14;s:57:"/var/www/ecshop/themes/default/library/recommend_best.lbi";i:15;s:56:"/var/www/ecshop/themes/default/library/recommend_new.lbi";i:16;s:56:"/var/www/ecshop/themes/default/library/recommend_hot.lbi";i:17;s:50:"/var/www/ecshop/themes/default/library/auction.lbi";i:18;s:52:"/var/www/ecshop/themes/default/library/group_buy.lbi";i:19;s:47:"/var/www/ecshop/themes/default/library/help.lbi";i:20;s:54:"/var/www/ecshop/themes/default/library/page_footer.lbi";}s:7:"expires";i:1354024331;s:8:"maketime";i:1354020731;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -337,14 +337,14 @@ function check_email()
       <h1><a href="search.php?intro=promotion"><img src="themes/default/images/more.gif" /></a></h1>
        <div class="clearfix goodBox">
                              <div class="goodList">
-           <a href="goods.php?id=8"><img src="images/200905/thumb_img/8_thumb_G_1241425513488.jpg" border="0" alt="飞利浦9@9v"/></a><br />
-					 <p><a href="goods.php?id=8" title="飞利浦9@9v">飞利浦9@9v</a></p>
-           促销价：<font class="f1">￥385元</font>
-           </div>
-                                      <div class="goodList">
            <a href="goods.php?id=32"><img src="images/200905/thumb_img/32_thumb_G_1242110760196.jpg" border="0" alt="诺基亚N85"/></a><br />
 					 <p><a href="goods.php?id=32" title="诺基亚N85">诺基亚N85</a></p>
            促销价：<font class="f1">￥2750元</font>
+           </div>
+                                      <div class="goodList">
+           <a href="goods.php?id=8"><img src="images/200905/thumb_img/8_thumb_G_1241425513488.jpg" border="0" alt="飞利浦9@9v"/></a><br />
+					 <p><a href="goods.php?id=8" title="飞利浦9@9v">飞利浦9@9v</a></p>
+           促销价：<font class="f1">￥385元</font>
            </div>
                          </div>
       </div>
@@ -378,13 +378,6 @@ function check_email()
               </div>
   <div id="show_best_area" class="clearfix goodsBox">
       <div class="goodsItem">
-         <span class="best"></span>
-           <a href="goods.php?id=29"><img src="images/200905/thumb_img/29_thumb_G_1241973022239.jpg" alt="移动100元充值卡" class="goodsimg" /></a><br />
-           <p><a href="goods.php?id=29" title="移动100元充值卡">移动100元充...</a></p>
-           <font class="f1">
-                     ￥90元                     </font>
-        </div>
-    <div class="goodsItem">
          <span class="best"></span>
            <a href="goods.php?id=9"><img src="images/200905/thumb_img/9_thumb_G_1241511871555.jpg" alt="诺基亚E66" class="goodsimg" /></a><br />
            <p><a href="goods.php?id=9" title="诺基亚E66">诺基亚E66</a></p>
@@ -447,6 +440,13 @@ function check_email()
            <font class="f1">
                      ￥2000元                     </font>
         </div>
+    <div class="goodsItem">
+         <span class="best"></span>
+           <a href="goods.php?id=27"><img src="images/200905/thumb_img/27_thumb_G_1241972894068.jpg" alt="联通100元充值卡" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=27" title="联通100元充值卡">联通100元充...</a></p>
+           <font class="f1">
+                     ￥95元                     </font>
+        </div>
     <div class="more"><a href="search.php?intro=best"><img src="themes/default/images/more.gif" /></a></div>
     </div>
 </div>
@@ -464,6 +464,13 @@ function check_email()
               </div>
   <div id="show_new_area" class="clearfix goodsBox">
       <div class="goodsItem">
+         <span class="news"></span>
+           <a href="goods.php?id=32"><img src="images/200905/thumb_img/32_thumb_G_1242110760196.jpg" alt="诺基亚N85" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=32" title="诺基亚N85">诺基亚N85</a></p>
+           <font class="f1">
+                     ￥2750元                     </font>
+        </div>
+    <div class="goodsItem">
          <span class="news"></span>
            <a href="goods.php?id=9"><img src="images/200905/thumb_img/9_thumb_G_1241511871555.jpg" alt="诺基亚E66" class="goodsimg" /></a><br />
            <p><a href="goods.php?id=9" title="诺基亚E66">诺基亚E66</a></p>
@@ -521,13 +528,6 @@ function check_email()
         </div>
     <div class="goodsItem">
          <span class="news"></span>
-           <a href="goods.php?id=32"><img src="images/200905/thumb_img/32_thumb_G_1242110760196.jpg" alt="诺基亚N85" class="goodsimg" /></a><br />
-           <p><a href="goods.php?id=32" title="诺基亚N85">诺基亚N85</a></p>
-           <font class="f1">
-                     ￥2750元                     </font>
-        </div>
-    <div class="goodsItem">
-         <span class="news"></span>
            <a href="goods.php?id=12"><img src="images/200905/thumb_img/12_thumb_G_1241965978410.jpg" alt="摩托罗拉A810" class="goodsimg" /></a><br />
            <p><a href="goods.php?id=12" title="摩托罗拉A810">摩托罗拉A81...</a></p>
            <font class="f1">
@@ -551,17 +551,10 @@ function check_email()
   <div id="show_hot_area" class="clearfix goodsBox">
       <div class="goodsItem">
          <span class="hot"></span>
-           <a href="goods.php?id=28"><img src="images/200905/thumb_img/28_thumb_G_1241972976986.jpg" alt="联通50元充值卡" class="goodsimg" /></a><br />
-           <p><a href="goods.php?id=28" title="联通50元充值卡">联通50元充值...</a></p>
+           <a href="goods.php?id=32"><img src="images/200905/thumb_img/32_thumb_G_1242110760196.jpg" alt="诺基亚N85" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=32" title="诺基亚N85">诺基亚N85</a></p>
            <font class="f1">
-                     ￥45元                     </font>
-        </div>
-    <div class="goodsItem">
-         <span class="hot"></span>
-           <a href="goods.php?id=29"><img src="images/200905/thumb_img/29_thumb_G_1241973022239.jpg" alt="移动100元充值卡" class="goodsimg" /></a><br />
-           <p><a href="goods.php?id=29" title="移动100元充值卡">移动100元充...</a></p>
-           <font class="f1">
-                     ￥90元                     </font>
+                     ￥2750元                     </font>
         </div>
     <div class="goodsItem">
          <span class="hot"></span>
@@ -618,6 +611,13 @@ function check_email()
            <p><a href="goods.php?id=20" title="三星BC01">三星BC01</a></p>
            <font class="f1">
                      ￥280元                     </font>
+        </div>
+    <div class="goodsItem">
+         <span class="hot"></span>
+           <a href="goods.php?id=24"><img src="images/200905/thumb_img/24_thumb_G_1241971981429.jpg" alt="P806" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=24" title="P806">P806</a></p>
+           <font class="f1">
+                     ￥2000元                     </font>
         </div>
     <div class="more"><a href="search.php?intro=hot"><img src="themes/default/images/more.gif" /></a></div>
     </div>
@@ -709,7 +709,7 @@ function check_email()
 <div class="blank"></div>
 <div id="footer">
  <div class="text">
- &copy; 2005-2012 ECSHOP 版权所有，并保留所有权利。<br />
+ &copy; 2005-2012 ECSHOPxx 版权所有，并保留所有权利。<br />
                                                                                      <br />
     554fcae493e564ee0dc75bdf2ebf94caquery_info|a:1:{s:4:"name";s:10:"query_info";}554fcae493e564ee0dc75bdf2ebf94ca<br />
   <a href="http://www.ecshop.com" target="_blank" style=" font-family:Verdana; font-size:11px;">Powered&nbsp;by&nbsp;<strong><span style="color: #3366FF">ECShop</span>&nbsp;<span style="color: #FF9966">v2.7.3</span></strong></a>&nbsp;<a href="http://www.ecshop.com/license.php?product=ecshop_b2c&url=http%3A%2F%2Fmyecshop.com%2F" target="_blank"
