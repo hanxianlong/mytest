@@ -1,12 +1,4 @@
-/*
-Template Name: ECSHOP Default
-Template URI: http://www.ecshop.com/
-Description: The default ECSHOP template.
-Version: 1.0
-Author: ECSHOP Team
-Author URI: http://www.ecshop.com/
-Logo filename: logo.gif
-*/
+﻿
 * html {
   filter:expression(document.execCommand("BackgroundImageCache", false, true));
   /*  fix IE6 background flicker  */

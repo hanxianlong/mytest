@@ -12,7 +12,7 @@ $db_user   = "root";
 $db_pass   = "han1987118";
 
 // table prefix
-$prefix    = "myecs";
+$prefix    = "myecs_";
 
 $timezone    = "UTC";
 

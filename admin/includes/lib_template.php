@@ -303,6 +303,7 @@ function get_template_info($template_name, $template_style='')
     $info['screenshot'] = '';
     $info['stylename'] = $template_style;
 
+    //根据传来的模板样式，得到当前模板所使用的样式缩略图文件,图片路径为 /template_dir/theme_dir/images/screenshot_csstyle.ext
     if ($template_style == '')
     {
         foreach ($ext AS $val)
@@ -310,7 +311,6 @@ function get_template_info($template_name, $template_style='')
             if (file_exists('../themes/' . $template_name . "/images/screenshot.$val"))
             {
                 $info['screenshot'] = '../themes/' . $template_name . "/images/screenshot.$val";
-
                 break;
             }
         }
@@ -322,12 +322,12 @@ function get_template_info($template_name, $template_style='')
             if (file_exists('../themes/' . $template_name . "/images/screenshot_$template_style.$val"))
             {
                 $info['screenshot'] = '../themes/' . $template_name . "/images/screenshot_$template_style.$val";
-
                 break;
             }
         }
     }
 
+    //得到当前模板的样式路径，默认为style.css,如果传入样式名，则加上样式标识作为当前模板的样式文件路径
     $css_path = '../themes/' . $template_name . '/style.css';
     if ($template_style != '')
     {
@@ -335,8 +335,9 @@ function get_template_info($template_name, $template_style='')
     }
     if (file_exists($css_path) && !empty($template_name))
     {
-        $arr = array_slice(file($css_path), 0, 10);
-
+        $arr = array_slice(file($css_path), 0, 10);//读取文件的前10行。
+        
+        //将每一行以冒号":"为标记，拆分为数组，取第一个元素作为有用的信息
         $template_name      = explode(': ', $arr[1]);
         $template_uri       = explode(': ', $arr[2]);
         $template_desc      = explode(': ', $arr[3]);
@@ -346,7 +347,6 @@ function get_template_info($template_name, $template_style='')
         $logo_filename      = explode(': ', $arr[7]);
         $template_type      = explode(': ', $arr[8]);
 
-
         $info['name']       = isset($template_name[1]) ? trim($template_name[1]) : '';
         $info['uri']        = isset($template_uri[1]) ? trim($template_uri[1]) : '';
         $info['desc']       = isset($template_desc[1]) ? trim($template_desc[1]) : '';
@@ -355,7 +355,6 @@ function get_template_info($template_name, $template_style='')
         $info['author_uri'] = isset($author_uri[1]) ? trim($author_uri[1]) : '';
         $info['logo']       = isset($logo_filename[1]) ? trim($logo_filename[1]) : '';
         $info['type']       = isset($template_type[1]) ? trim($template_type[1]) : '';
-
     }
     else
     {

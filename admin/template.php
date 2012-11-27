@@ -1,19 +1,7 @@
 <?php
 
 /**
- * ECSHOP 管理中心模版管理程序
- * ============================================================================
- * * 版权所有 2005-2012 上海商派网络科技有限公司，并保留所有权利。
- * 网站地址: http://www.ecshop.com；
- * ----------------------------------------------------------------------------
- * 这不是一个自由软件！您只能在不用于商业目的的前提下对程序代码进行修改和
- * 使用；不允许对程序代码以任何形式任何目的的再发布。
- * ============================================================================
- * @author:     Weber Liu <weberliu@hotmail.com>
- * @version:    v2.1
- * ---------------------------------------------
- * $Author: liubo $
- * $Id: template.php 17217 2011-01-19 06:29:08Z liubo $
+ *  模版管理程序
 */
 
 define('IN_ECS', true);
@@ -22,7 +10,7 @@ require(dirname(__FILE__) . '/includes/init.php');
 require_once('includes/lib_template.php');
 
 /*------------------------------------------------------ */
-//-- 模版列表
+//-- 显示模版列表
 /*------------------------------------------------------ */
 if ($_REQUEST['act'] == 'list')
 {
@@ -32,7 +20,7 @@ if ($_REQUEST['act'] == 'list')
     $curr_template = $_CFG['template'];
     $curr_style = $_CFG['stylename'];
 
-    /* 获得可用的模版 */
+    /* 获得可用的模版:循环遍历themes文件夹下所有子文件夹，得到的文件夹名即为模板名 */
     $available_templates = array();
     $template_dir        = @opendir(ROOT_PATH . 'themes/');
     while ($file = readdir($template_dir))
@@ -862,9 +850,7 @@ function read_tpl_style($tpl_name, $flag=1)
             foreach ($available_templates as $value)
             {
                 $tpl_info = get_template_info($tpl_name, $value);
-
                 $ec .= '<table border="0" width="100%" cellpadding="0" cellspacing="0" class="colortable" onMouseOver="javascript:onSOver(\'' . $value . '\', this);" onMouseOut="onSOut(this);" onclick="javascript:setupTemplateFG(\'' . $value . '\');"  bgcolor="' . $tpl_info['type'] . '"><tr><td>&nbsp;</td></tr></table>';
-
                 unset($tpl_info);
             }
         }

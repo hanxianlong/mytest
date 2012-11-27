@@ -1035,7 +1035,6 @@ elseif ($_REQUEST['act'] == 'third')
 /*------------------------------------------------------ */
 //-- 关于 ECSHOP
 /*------------------------------------------------------ */
-
 elseif ($_REQUEST['act'] == 'about_us')
 {
     assign_query_info();
@@ -1045,7 +1044,6 @@ elseif ($_REQUEST['act'] == 'about_us')
 /*------------------------------------------------------ */
 //-- 拖动的帧
 /*------------------------------------------------------ */
-
 elseif ($_REQUEST['act'] == 'drag')
 {
     $smarty->display('drag.htm');;
@@ -1190,99 +1188,5 @@ elseif ($_REQUEST['act'] == 'send_mail')
         make_json_result('', sprintf($_LANG['mailsend_fail'],$row['email']), array('count' => $count));
     }
 }
-
-/*------------------------------------------------------ */
-//-- license操作
-/*------------------------------------------------------ */
-elseif ($_REQUEST['act'] == 'license')
-{
-    $is_ajax = $_GET['is_ajax'];
-
-    if (isset($is_ajax) && $is_ajax)
-    {
-        // license 检查
-        include_once(ROOT_PATH . 'includes/cls_transport.php');
-        include_once(ROOT_PATH . 'includes/cls_json.php');
-        include_once(ROOT_PATH . 'includes/lib_main.php');
-        include_once(ROOT_PATH . 'includes/lib_license.php');
-
-        $license = license_check();
-        switch ($license['flag'])
-        {
-            case 'login_succ':
-                if (isset($license['request']['info']['service']['ecshop_b2c']['cert_auth']['auth_str']))
-                {
-                    make_json_result(process_login_license($license['request']['info']['service']['ecshop_b2c']['cert_auth']));
-                }
-                else
-                {
-                    make_json_error(0);
-                }
-            break;
-
-            case 'login_fail':
-            case 'login_ping_fail':
-                make_json_error(0);
-            break;
-
-            case 'reg_succ':
-                $_license = license_check();
-                switch ($_license['flag'])
-                {
-                    case 'login_succ':
-                        if (isset($_license['request']['info']['service']['ecshop_b2c']['cert_auth']['auth_str']) && $_license['request']['info']['service']['ecshop_b2c']['cert_auth']['auth_str'] != '')
-                        {
-                            make_json_result(process_login_license($license['request']['info']['service']['ecshop_b2c']['cert_auth']));
-                        }
-                        else
-                        {
-                            make_json_error(0);
-                        }
-                    break;
-
-                    case 'login_fail':
-                    case 'login_ping_fail':
-                        make_json_error(0);
-                    break;
-                }
-            break;
-
-            case 'reg_fail':
-            case 'reg_ping_fail':
-                make_json_error(0);
-            break;
-        }
-    }
-    else
-    {
-        make_json_error(0);
-    }
-}
-
-/**
- * license check
- * @return  bool
- */
-function license_check()
-{
-    // return 返回数组
-    $return_array = array();
-
-    // 取出网店 license
-    $license = get_shop_license();
-
-    // 检测网店 license
-    if (!empty($license['certificate_id']) && !empty($license['token']) && !empty($license['certi']))
-    {
-        // license（登录）
-        $return_array = license_login();
-    }
-    else
-    {
-        // license（注册）
-        $return_array = license_reg();
-    }
-
-    return $return_array;
-}
+ 
 ?>
