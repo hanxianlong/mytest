@@ -1,9 +1,9 @@
 <?php
 $data = array (
-  'shop_name' => 'ECSHOPxx',
-  'shop_title' => 'ECSHOP演示站',
-  'shop_desc' => 'ECSHOP演示站',
-  'shop_keywords' => 'ECSHOP演示站',
+  'shop_name' => 'WarbyParker-Chinese',
+  'shop_title' => 'WarbyParker-中文版',
+  'shop_desc' => 'WarbyParker中文版,做中国的WarbyParker',
+  'shop_keywords' => 'WarbyParker-中文版',
   'shop_country' => '1',
   'shop_province' => '2',
   'shop_city' => '52',
@@ -18,7 +18,7 @@ $data = array (
   'shop_closed' => '0',
   'close_comment' => '',
   'shop_logo' => '',
-  'licensed' => '1',
+  'licensed' => '0',
   'user_notice' => '用户中心公告！',
   'shop_notice' => '欢迎光临手机网,我们的宗旨：诚信经营、服务客户！
 <MARQUEE onmouseover=this.stop() onmouseout=this.start() 
@@ -168,7 +168,7 @@ scrollAmount=3><U><FONT color=red>
   'sitemap' => 'a:6:{s:19:"homepage_changefreq";s:6:"hourly";s:17:"homepage_priority";s:3:"0.9";s:19:"category_changefreq";s:6:"hourly";s:17:"category_priority";s:3:"0.8";s:18:"content_changefreq";s:6:"weekly";s:16:"content_priority";s:3:"0.7";}',
   'points_rule' => '',
   'flash_theme' => 'dynfocus',
-  'stylename' => '',
+  'stylename' => 'warbyparker',
   'show_goodssn' => '1',
   'show_brand' => '1',
   'show_goodsweight' => '1',

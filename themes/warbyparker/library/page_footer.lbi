@@ -68,4 +68,5 @@
     <div align="left"  id="rss"><a href="{$feed_url}"><img src="../images/xml_rss2.gif" alt="rss" /></a></div>
  </div>
 </div>
+</div>
 

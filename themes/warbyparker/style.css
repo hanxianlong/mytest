@@ -5,7 +5,7 @@ Description: warbyparker theme
 Version: 1.1.0
 Author: 韩现龙
 Author URI: http://no url/
-Logo filename: logo.gif
+Logo filename: logo.png
 Template Type: type_0
 */
 
@@ -21,6 +21,7 @@ margin:0; padding:0; border:none; list-style-type:none;
 .block{
   width:960px; height:auto;
 }
+
 .f_l{float:left;}
 .f_r{float:right;}
 .tl{ text-align:left;}
@@ -43,7 +44,6 @@ visibility:hidden;
 }
 /*英文强制换行*/
 .word{word-break:break-all;}
-
   /*边框*/
   .B_blue{border:1px solid #c5e4ff;}
   .B_input{border:1px solid #0f97ed;}
@@ -497,3 +497,5 @@ visibility:hidden;
  float:left;
  width:300px;
 }
+
+
