@@ -7,7 +7,7 @@ if (!defined('IN_ECS'))
 {
     die('sorry,please don\'t do this! ');
 }
-
+define('DEBUG_MODE',2);//当定义debugmode为2时，不会缓存任何页面，所有内容全部直接走php逻辑。
 error_reporting(E_ALL);
 
 if (__FILE__ == '')

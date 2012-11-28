@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 首页文件
+ * 首页文件,modified in centos6.3
 */
 
 define('IN_ECS', true);
